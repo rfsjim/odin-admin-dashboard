@@ -1,0 +1,67 @@
+body {
+    background-color: #e2e8f0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 40% 60%;
+}
+
+#sidebar {
+    background-color: #1992d4;
+    color: #fff;
+    grid-row: 1 / span 2;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}   
+
+#header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 40% 60%;
+    background-color: #fff;
+}
+
+#header form {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+#header #greeting {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+#header #notifications {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#header #actions {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#header #actions {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#content #projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card, .news, .users {
+    background-color: #fff;
+}
