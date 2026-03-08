@@ -3,10 +3,15 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+img.avatar {
+    width: 75px;
+    height: auto;
+}
+
 #container {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 17.5% 82.5%;
 }
 
 #sidebar {
@@ -17,7 +22,11 @@ body {
 
 #sidebar ul {
     list-style-type: none;
-}   
+}
+
+ul#setup {
+    margin-top: 50px;
+}
 
 #header {
     display: grid;
@@ -57,10 +66,19 @@ body {
     border-radius: 25%;
 }
 
+#greeting img.avatar {
+    width: 100px;
+    height: auto;
+}
+
 #content {
     display: grid;
     grid-template-columns: 80% 20%;
     padding: 25px;
+}
+
+#content p {
+    color: #636363;
 }
 
 #content #projects {
@@ -70,9 +88,14 @@ body {
     margin-right: 25px;
 }
 
+#projects h2 {
+    grid-column: 1 / span 2;
+}
+
 .card {
     border-left: 5px solid #f0b429;
     padding: 20px;
+    display: grid;
 }
 
 #aside {
@@ -82,4 +105,13 @@ body {
 
 .card, .news, .users {
     background-color: #fff;
+}
+
+.project-utilities {
+    justify-self: right;
+    align-self: end;
+}
+
+.project-utilities span {
+    margin-left: 25px;
 }
